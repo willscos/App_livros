@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+streamlit
+requests
+pyscopg2-binary
+sqlalchemy
