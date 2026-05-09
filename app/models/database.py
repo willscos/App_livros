@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = os.getenv('postgresql://neondb_owner:npg_TDhwyGxtV31k@ep-small-field-ap6t00zq-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require')
+SQLALCHEMY_DATABASE_URL = 'postgresql://neondb_owner:npg_TDhwyGxtV31k@ep-small-field-ap6t00zq-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 
 if SQLALCHEMY_DATABASE_URL.startswith('postgres://'):
     SQLALCHEMY_DATABASE_URL = SQLALCHEMY_DATABASE_URL.replace("postgres://","postgresql://", 1)
